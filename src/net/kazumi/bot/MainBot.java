@@ -31,9 +31,6 @@ public class MainBot {
 
     private static JDA jda;
     
-    private static String KazuToken = "MjI3MjAzNDE0NDAzMTg2Njkw.CtZyyw.Rq8YJPNiHPJ3EZyzUNS0F_eWxKU";
-    //private static String SatanToken = "MTg5NzA1NTE5MTYwNzU0MTc3.CteksQ.gwcAg-855HxlYLXzI6WBVPvprU0";
-    
     public static final CommandParser parser = new CommandParser();
     
     private static HashMap<String, command> commands = new HashMap<String, command>();
@@ -51,7 +48,7 @@ public class MainBot {
         }
         System.out.println("Connecte avec: " + jda.getSelfInfo().getUsername());
         int i;
-        System.out.println("Le bot est autorisé sur " + (i = jda.getGuilds().size()) + " serveur" + (i > 1 ? "s" : ""));
+        System.out.println("Le bot est autorisÃ© sur " + (i = jda.getGuilds().size()) + " serveur" + (i > 1 ? "s" : ""));
         
         //commande help
         commands.put("help", new HelpCommand());
@@ -62,7 +59,7 @@ public class MainBot {
         commands.put("pika", new PikaCommand());
         
         
-        //commande d'arrêt
+        //commande d'arrÃªt
         commands.put("deco", new StopCommand());
         
         
